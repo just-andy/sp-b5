@@ -3984,9 +3984,16 @@ textarea.form-control-lg {
   color: #c89211;
   background-color: #f3f6f9;
 }
-.date-nav-button .active {
+
+.date-nav-active {
+  box-shadow: inset 0px -4px 0px 0px #c89211;
+}
+.date-nav-active .date-nav-date {
   color: #c89211;
-  border-bottom: 2px solid #c89211;
+}
+.date-nav-active .date-nav-day {
+  color: #3f4254;
+  font-weight: bolder;
 }
 
 .date-nav-date, .date-nav-day {
@@ -3998,7 +4005,9 @@ textarea.form-control-lg {
 }
 
 .date-nav-calendar {
+  display: flex;
   justify-content: center;
+  align-items: center;
   vertical-align: middle;
 }
 .date-nav-calendar i {
