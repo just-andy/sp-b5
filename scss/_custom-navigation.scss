@@ -1,0 +1,104 @@
+.date-nav-bar {
+    display: block;
+    line-height: 1em;
+    text-align: center;
+    background-color: $gray-200;
+    padding: ($spacer * 0.25) 0 ;
+
+    & h1 {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
+        color: $dark;
+        margin-bottom: 0;
+    }
+}
+
+.date-nav {
+    display: flex;
+    width: 100%;
+}
+
+.date-nav li {
+    flex: 1;
+    list-style: none;
+    margin: 0;
+}
+
+.date-nav-button {
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: $dark;
+    padding: ($spacer * 0.5);
+    vertical-align: middle;
+
+    &:hover {
+        color: $primary;
+        background-color: $gray-100;
+    }
+
+    & .active {
+        color: $primary;
+        border-bottom:2px solid $primary;
+    }
+}
+
+// Date Nav
+.date-nav-date, .date-nav-day {
+    font-size: $font-size-sm;
+}
+
+.date-nav-date {
+    font-weight: $font-weight-bolder;
+}
+
+.date-nav-calendar {
+    
+    justify-content: center;
+    vertical-align: middle;
+
+    & i {
+    width: 1.5em;
+    font-size: ($font-size-base * 1.5);
+    }
+}
+
+// Program
+
+/* Style the navigation menu */
+.program-bar {
+    width: 100%;
+    background-color: $gray-100;
+    border: 1px solid $gray-200;
+    overflow: auto;
+    display:flex;
+    border-radius: 9999px;
+  }
+  
+  /* Navigation links */
+  .program-bar a {
+    flex: 1;
+    text-align:center;
+    padding: ($spacer * 0.75) ($spacer * 0.5);
+    color: $gray-800;
+    font-weight: $font-weight-bolder;
+    text-decoration: none;
+    font-size: $font-size-sm;
+  }
+  
+    @media only screen and (max-width: 600px) {
+      .program-bar a span {
+         display:none;
+      }
+    }
+  
+  /* Add a background color on mouse-over */
+  .program-bar a:hover {
+    background-color: $primary;
+    color: $white;
+  }
+
+  .program-bar a.active {
+    background-color: $gold-600;
+    color: $white;
+  }
