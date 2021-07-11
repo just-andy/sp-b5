@@ -485,7 +485,7 @@ $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.2 !default;
-$headings-color: null !default;
+$headings-color: $gray-800 !default; // Adjusted
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
@@ -1151,10 +1151,10 @@ $card-group-margin: $grid-gutter-width * 0.5 !default;
 // scss-docs-start accordion-variables
 $accordion-padding-y: 1rem !default;
 $accordion-padding-x: 0rem !default; // Adjusted
-$accordion-color: $body-color !default;
+$accordion-color: $gray-800 !default; //Adjusted
 $accordion-bg: $body-bg !default;
 $accordion-border-width: $border-width !default;
-$accordion-border-color: $gray-100 !default;
+$accordion-border-color: $gray-100 !default; //Adjusted
 $accordion-border-radius: $border-radius !default;
 $accordion-inner-border-radius: subtract(
   $accordion-border-radius,

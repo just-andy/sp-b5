@@ -73,6 +73,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+  color: #3f4254;
 }
 
 h1, .h1 {
@@ -3966,10 +3967,9 @@ textarea.form-control-lg {
   width: 100%;
 }
 
-.date-nav li {
+.date-nav a {
   flex: 1;
-  list-style: none;
-  margin: 0;
+  padding: 0.75rem 0.5rem;
 }
 
 .date-nav-button {
@@ -4014,6 +4014,7 @@ textarea.form-control-lg {
   overflow: auto;
   display: flex;
   border-radius: 9999px;
+  margin-top: 1rem;
 }
 
 /* Navigation links */
@@ -8770,9 +8771,35 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (min-width: 576px) {
+  body {
+    background-color: #ebedf3;
+  }
+}
+.custom-container {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .custom-container {
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .btn-outline-primary {
   color: #181c32;
   border-width: 2px;
+}
+
+.btn-two-col {
+  flex: 1;
 }
 
 .btn-primary, .btn-success {

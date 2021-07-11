@@ -58,6 +58,35 @@
 @import "../node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
+
+/// /// ///
+/// Custom Styles
+/// /// ///
+
+// Body
+@include media-breakpoint-up(sm) {
+  body {
+    background-color: $gray-200;
+  }
+}
+
+// Container
+// Source mixin
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.custom-container {
+  @include make-container($padding-x:0);
+  @include media-breakpoint-up(sm) {
+    @include make-container(12px);
+  }
+}
+
 // Style outline primary
 .btn-outline-primary {
   @extend .btn-outline-primary;
@@ -65,7 +94,10 @@
   border-width: 2px;
 }
 
-// Hard Overrides
+.btn-two-col {
+  flex: 1;
+}
+
 
 // Buttons
 
