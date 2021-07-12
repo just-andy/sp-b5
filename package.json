@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel ./src/index.html ./src/workout.html",
     "prebuild": "npx rimraf build",
-    "build": "parcel build --public-url ./ ./src/index.html ./src/workout.html --experimental-scope-hoisting --out-dir build"
+    "build": "parcel build --public-url ./ ./src/index.html ./src/workout.html --experimental-scope-hoisting --no-minify --out-dir build"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,8 @@
     "bootstrap-icons": "^1.5.0"
   },
   "devDependencies": {
+    "cssnano": "^5.0.6",
+    "postcss": "^8.2.15",
     "sass": "^1.35.1"
   }
 }
