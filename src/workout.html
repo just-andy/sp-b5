@@ -181,6 +181,80 @@
       </a>
     </div>
     <!-- Log Workout Group-->
+    <!-- Logging Form -->
+    <form>
+      <fieldset>
+        <legend class="h4">Log Workout</legend>
+      <div class="form-group mb-3">
+        <div class="d-flex justify-content-between">
+        <label for="exampleInputEmail1">Notes</label>
+        <span class="text-muted">Optional</span>
+      </div>
+        <textarea
+          class="form-control my-1"
+          id="formTextarea"
+          aria-describedby="formTextarea"
+          placeholder="Enter a note to remember your workout for future reference"
+        ></textarea>
+        <small id="emailHelp" class="form-text">Add notes about your workout for future reference.</small>
+      </div>
+      <div class="form-group mb-3">
+        <div class="d-flex justify-content-between">
+        <label for="formWeight">Weight Used</label>
+        <span class="text-muted">Optional</span>
+      </div>
+        <input
+          type="text"
+          class="form-control my-1"
+          id="formWeight"
+          aria-describedby="formWeight"
+          placeholder="Enter lbs/kg used"
+        >
+      </div>
+      <div class="form-group mb-3">
+        <label for="formWeight">Score (Time)</label>
+        <div class="d-flex gap-2 my-1">
+          <input
+            type="number"
+            class="form-control"
+            id="formScore1"
+            aria-describedby="formScore1"
+            placeholder="MM"
+          >
+          <input
+          type="number"
+          class="form-control"
+          id="formScore2"
+          aria-describedby="formScore2"
+          placeholder="SS"
+        >
+        </div>
+        <small id="emailHelp" class="form-text">Goal is 12 - 17 Minutes / Total time including rest</small>
+      </div>
+      <div class="form-group">
+        <label for="formIcon">How was it for you?</label>
+        <div class="d-flex justify-content-between gap-1 my-3">
+          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+          <label class="btn btn-light btn-lg" for="option1"><i class="bi bi-emoji-smile"></i></label>
+          <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" >
+          <label class="btn btn-light btn-lg" for="option1"><i class="bi bi-emoji-smile"></i></label>
+          <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" >
+          <label class="btn btn-light btn-lg" for="option1"><i class="bi bi-emoji-frown"></i></label>
+          <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off" >
+          <label class="btn btn-light btn-lg" for="option1"><i class="bi bi-emoji-dizzy"></i></label>
+          <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off" >
+          <label class="btn btn-light btn-lg" for="option1"><i class="bi bi-emoji-angry"></i></label>
+        </div>
+      </div>
+      <div class="d-grid my-5">
+        <a class="btn btn-primary">
+          <i class="bi bi-bookmark-check-fill"></i>
+          Save Workout
+        </a>
+      </div>
+    </fieldset>
+    </form>
+    <!-- Logging Form -->
   </section>
   </article>
 
