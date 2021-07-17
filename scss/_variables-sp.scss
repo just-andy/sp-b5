@@ -1354,18 +1354,18 @@ $progress-bar-transition: width 0.6s ease !default;
 // List group
 
 // scss-docs-start list-group-variables
-$list-group-color: $gray-900 !default;
+$list-group-color: $body-color !default; // Adjusted
 $list-group-bg: $white !default;
 $list-group-border-color: rgba($black, 0.125) !default;
 $list-group-border-width: $border-width !default;
 $list-group-border-radius: $border-radius !default;
 
-$list-group-item-padding-y: $spacer * 0.5 !default;
+$list-group-item-padding-y: $spacer * 0.75 !default; // Adjusted
 $list-group-item-padding-x: $spacer !default;
 $list-group-item-bg-scale: -80% !default;
 $list-group-item-color-scale: 40% !default;
 
-$list-group-hover-bg: $gray-100 !default;
+$list-group-hover-bg: $gray-400 !default; // Adjusted
 $list-group-active-color: $component-active-color !default;
 $list-group-active-bg: $component-active-bg !default;
 $list-group-active-border-color: $list-group-active-bg !default;

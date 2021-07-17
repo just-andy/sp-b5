@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/index.html ./src/workout.html",
+    "dev": "parcel ./src/index.html ./src/workout.html ./src/list.html",
     "prebuild": "npx rimraf build",
-    "build": "parcel build --public-url ./ ./src/index.html ./src/workout.html --experimental-scope-hoisting --no-minify --out-dir build"
+    "build": "parcel build --public-url ./ ./src/index.html ./src/workout.html ./src/list.html --experimental-scope-hoisting --no-minify --out-dir build"
   },
   "keywords": [],
   "author": "",
