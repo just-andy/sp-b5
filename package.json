@@ -5,9 +5,9 @@
   "description": "Bootstrap 5 testing",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/index.html ./src/workout.html ./src/list.html ./src/warmup.html ./src/button-group.html",
+    "dev": "parcel *.html",
     "prebuild": "npx rimraf build",
-    "build": "parcel build --public-url ./ ./src/index.html ./src/workout.html ./src/list.html ./src/warmup.html ./src/button-group.html --experimental-scope-hoisting --no-minify --out-dir build"
+    "build": "parcel build --public-url *.html --experimental-scope-hoisting --no-minify --out-dir build"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "parcel": "^2.0.1"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
     "cssnano": "^5.0.6",
     "prettier": "2.3.2",
     "sass": "^1.35.1"
