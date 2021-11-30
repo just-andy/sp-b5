@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "source": "src/index.html",
   "description": "Bootstrap 5 testing",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/index.html ./src/list.html ./src/warmup.html ./src/workout.html ./src/button-group.html",
+    "dev": "parcel './src/*.html'",
     "prebuild": "npx rimraf build",
-    "build": "parcel build --public-url ./src/index.html ./src/list.html ./src/warmup.html ./src/workout.html ./src/button-group.html --experimental-scope-hoisting --no-minify --out-dir build"
+    "build": "parcel build './src/*html'"
   },
   "keywords": [],
   "author": "",
