@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <title>Street Parking Button Group</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../scss/custom.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div class="container section-spacer">
+      <!-- Container-->
+      <h1 class="my-4">Buttons</h1>
+
+      <div class="my-3">
+      <h3>One Button End</h3>
+      <!-- One Button-->
+      <div class="sp-btn-end">
+        <a href="#" class="btn btn-primary">Primary</a>
+      </div>
+      <!-- One Button -->
+      </div>
+      <div class="my-3">
+      <h3>Two Buttons</h3>
+      <!-- Two Buttons-->
+      <div class="sp-btn-row">
+        <a href="#" class="btn btn-outline-primary sp-order-2">Back</a>
+        <a href="#" class="btn btn-secondary sp-order-1">Secondary</a>
+      </div>
+      <!-- Two Buttons -->
+      </div>
+      <div class="my-3">
+        <h3>Two Buttons End</h3>
+        <!-- Two Buttons End-->
+        <div class="sp-btn-end">
+          <div class="sp-btn-pair sp-reorder">
+            <a href="#" class="btn btn-secondary sp-order-2">Secondary</a>
+            <a href="#" class="btn btn-primary sp-order-1">Primary</a>
+          </div>
+        </div>
+        <!-- Two Buttons Ends-->
+        </div>
+      <div class="my-3">
+        <h3>Three Buttons</h3>
+      <!-- Three Buttons-->
+      <div class="sp-btn-row sp-reorder">
+        <a href="#" class="btn btn-outline-primary sp-order-2">Back</a>
+        <div class="sp-btn-pair sp-order-1">
+          <a href="#" class="btn btn-secondary sp-order-2">Secondary</a>
+          <a href="#" class="btn btn-primary sp-order-1">Primary</a>
+        </div>
+      </div>
+      <!-- Three Buttons-->
+      </div>
+      <div class="my-3">
+        <h3>Three Buttons with Delete</h3>
+      <!-- Three Buttons and Delete-->
+      <div class="sp-btn-row sp-reorder">
+        <a href="#" class="btn btn-outline-danger sp-order-2">Delete</a>
+        <div class="sp-btn-pair sp-order-1">
+          <a href="#" class="btn btn-secondary sp-order-2">Secondary</a>
+          <a href="#" class="btn btn-success sp-order-1">Save Changes</a>
+        </div>
+      </div>
+      <!-- Three Buttons and DElete-->
+      </div>
+      <!-- Container-->
+      <!-- Button Items-->
+      <section class="container section-spacer">
+        <div class="row">
+          <div class="col">
+            <div class="d-grid gap-2">
+              <h3>Small</h3>
+              <button class="btn btn-primary btn-sm">Button</Button>
+              <button class="btn btn-secondary btn-sm">Button</Button>
+              <button class="btn btn-success btn-sm">Button</Button>
+              <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt" aria-hidden="true"></i> Delete</Button>
+              <button class="btn btn-outline-primary btn-sm">Button</Button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2">
+              <h3>Medium</h3>
+              <button class="btn btn-primary">Button</Button>
+              <button class="btn btn-secondary">Button</Button>
+              <button class="btn btn-success">Button</Button>
+              <button class="btn btn-danger"><i class="fas fa-trash-alt" aria-hidden="true"></i> Delete</Button>
+              <button class="btn btn-outline-primary">Button</Button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-grid gap-2">
+              <h3>Large</h3>
+              <button class="btn btn-primary btn-lg">Button</Button>
+              <button class="btn btn-secondary btn-lg">Button</Button>
+              <button class="btn btn-success btn-lg">Button</Button>
+              <button class="btn btn-danger btn-lg"><i class="fas fa-trash-alt" aria-hidden="true"></i> Delete</Button>
+              <button class="btn btn-outline-primary btn-lg">Button</Button>
+            </div>
+          </div>
+        </div>
+    </section>
+      <!-- Button Items-->
+      <!-- Icons -->
+      <section class="container section-spacer">
+        <h1>Icons</h1>
+        <div class="row my-4">
+          <div class="col-2">
+            <button class="btn btn-icon-only btn-success"><i class="fas fa-save" aria-hidden="true"></i></button>
+          </div>
+          <div class="col-2">
+            <button class="btn btn-icon-only btn-link"><i class="fas fa-edit" aria-hidden="true"></i></button>
+          </div>
+          <div class="col-2">
+            <button class="btn btn-icon-only btn-danger"><i class="fas fa-trash-alt" aria-hidden="true"></i></button>
+
+          </div>
+          <div class="col-2">
+            <button class="btn btn-icon-only btn-light"><i class="fas fa-expand-alt" aria-hidden="true"></i></button>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-2"></div>
+        </div>
+      </section>
+      <!-- Icons -->
+      </div>
+    </body>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

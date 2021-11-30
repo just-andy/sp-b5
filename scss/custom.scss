@@ -7,37 +7,37 @@
 
 // scss-docs-start import-stack
 // Configuration
-@import "../node_modules/bootstrap/scss/functions";
+@import '../node_modules/bootstrap/scss/functions';
 //@import "../node_modules/bootstrap/scss/variables";
-@import "variables-sp";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/utilities";
+@import 'variables-sp';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/utilities';
 
 // Layout & components
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/grid";
+@import '../node_modules/bootstrap/scss/root';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
 // @import "../node_modules/bootstrap/scss/tables";
-@import "../node_modules/bootstrap/scss/forms";
-@import "../node_modules/bootstrap/scss/buttons";
+@import '../node_modules/bootstrap/scss/forms';
+@import '../node_modules/bootstrap/scss/buttons';
 // @import "../node_modules/bootstrap/scss/transitions";
 // @import "../node_modules/bootstrap/scss/dropdown";
-@import "../node_modules/bootstrap/scss/button-group";
-@import "../node_modules/bootstrap/scss/nav";
-@import "../node_modules/bootstrap/scss/navbar";
-@import "../node_modules/bootstrap/scss/card";
-@import "../node_modules/bootstrap/scss/accordion";
+@import '../node_modules/bootstrap/scss/button-group';
+@import '../node_modules/bootstrap/scss/nav';
+@import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/card';
+@import '../node_modules/bootstrap/scss/accordion';
 // @import "../node_modules/bootstrap/scss/breadcrumb";
 // @import "../node_modules/bootstrap/scss/pagination";
 // @import "../node_modules/bootstrap/scss/badge";
 // @import "alert-sp";
-//@import "signup-sp";
+// @import "signup-sp";
 // @import "../node_modules/bootstrap/scss/alert";
 // @import "../node_modules/bootstrap/scss/progress";
-@import "../node_modules/bootstrap/scss/list-group";
+@import '../node_modules/bootstrap/scss/list-group';
 // @import "../node_modules/bootstrap/scss/close";
 // @import "../node_modules/bootstrap/scss/toasts";
 // @import "../node_modules/bootstrap/scss/modal";
@@ -48,16 +48,16 @@
 // @import "../node_modules/bootstrap/scss/offcanvas";
 
 // Custom Partials
-@import "boxout";
-@import "custom-navigation";
+@import 'boxout';
+@import 'custom-navigation';
+@import 'sp-btn-row';
 
 // Helpers
-@import "../node_modules/bootstrap/scss/helpers";
+@import '../node_modules/bootstrap/scss/helpers';
 
 // Utilities
-@import "../node_modules/bootstrap/scss/utilities/api";
+@import '../node_modules/bootstrap/scss/utilities/api';
 // scss-docs-end import-stack
-
 
 /// /// ///
 /// Custom Styles
@@ -65,65 +65,72 @@
 
 // Body
 @include media-breakpoint-up(sm) {
-  body {
-    background-color: $gray-200;
-  }
+    body {
+        background-color: $gray-200;
+    }
 }
 
 // Container
 // Source mixin
 @mixin make-container($padding-x: $container-padding-x) {
-  width: 100%;
-  padding-right: $padding-x;
-  padding-left: $padding-x;
-  margin-right: auto;
-  margin-left: auto;
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .custom-container {
-  @include make-container($padding-x:0);
-  @include media-breakpoint-up(sm) {
-    @include make-container(12px);
-  }
+    @include make-container($padding-x: 0);
+    @include media-breakpoint-up(sm) {
+        @include make-container(12px);
+    }
 }
 
 // Style outline primary
 .btn-outline-primary {
-  @extend .btn-outline-primary;
-  color: $gray-900;
-  border-width: 2px;
+    @extend .btn-outline-primary;
+    color: $gray-900;
+    border-width: 2px;
 }
 
 .btn-two-col {
-  flex: 1;
+    flex: 1;
 }
-
 
 // Buttons
 
-.btn-primary, .btn-success {
-  color: $white !important;
+.btn-primary,
+.btn-success {
+    color: $white !important;
 }
 
 // Fave Button
 
 .btn-fave {
-  border: 2px solid $primary;
-  padding: 0.875rem;
-  border-radius: 9999999px;
-  
-  i {
-    font-weight: $font-weight-bolder;
-  }
+    border: 2px solid $primary;
+    padding: 0.875rem;
+    border-radius: 9999999px;
 
-  &:hover {
-    background-color: $primary;
-    color: $white;
-  }
+    i {
+        font-weight: $font-weight-bolder;
+    }
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
 }
 
 // list styles
 
 .list-group-title {
-  background-color: gray-200;
+    background-color: gray-200;
+}
+
+// section spacer
+
+.section-spacer {
+    margin-top: 3em;
+    margin-bottom: 3em;
 }

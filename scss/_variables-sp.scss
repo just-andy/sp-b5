@@ -16,7 +16,7 @@ $gray-600: #7e8299 !default; // Adjusted
 $gray-700: #5e6278 !default; // Adjusted
 $gray-800: #3f4254 !default; // Adjusted
 $gray-900: #181c32 !default; // Adjusted
-$black: #000 !default;
+$black: #111 !default;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -69,7 +69,7 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary: $gold !default; // Adjusted
-$secondary: $gray-600 !default;
+$secondary: $gray-900 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -520,7 +520,7 @@ $blockquote-footer-color: $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
 $hr-margin-y: $spacer !default;
-$hr-color: inherit !default;
+$hr-color: $gray-500 !default; // Adjusted
 $hr-height: $border-width !default;
 $hr-opacity: 0.25 !default;
 
