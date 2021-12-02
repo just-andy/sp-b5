@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel './src/*.html'",
     "prebuild": "npx rimraf build",
-    "build": "npx -p parcel parcel build './src/*html'"
+    "build": "parcel build './src/*html'"
   },
   "keywords": [],
   "author": "",
