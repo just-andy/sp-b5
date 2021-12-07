@@ -1,5 +1,6 @@
 .media-container {
     display: grid;
+    overflow: hidden; // crops images bigger than container
 
     @include media-breakpoint-up(lg) {
         grid-template-columns: repeat(5, 1fr);
