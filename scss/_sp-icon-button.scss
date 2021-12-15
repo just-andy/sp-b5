@@ -24,7 +24,6 @@
       text-decoration: if($link-hover-decoration == underline, none, null);
     }
   
-  
     &:disabled,
     &.disabled,
     fieldset:disabled & {
@@ -38,4 +37,32 @@
     .btn-icon-#{$color} {
         @include button-variant($value, $value);
     }
+}
+
+.btn-icon-primary-dark {
+  @include button-variant($gray-900, $gray-900, $white, $gray-800, $gray-800, $white, $gray-700, $gray-700, $white, $gray-400, $gray-400, $gray-100);
+}
+
+// Make a button look and behave like a link
+.btn-icon-link {
+  font-weight: $font-weight-normal;
+  color: $btn-link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $btn-link-hover-color;
+    background-color: $gray-100;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus {
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+  }
+
+  // No need for an active state here
 }
