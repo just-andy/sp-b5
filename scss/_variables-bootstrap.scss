@@ -607,7 +607,7 @@ $transition-input: color 0.15s ease, background-color 0.15s ease,
 // Links
 //
 // Style anchor elements.
-$link-color: $primary !default;
+$link-color: $gold-500 !default;
 $link-decoration: none !default;
 $link-hover-color: darken($primary, 15%) !default;
 $link-hover-decoration: underline !default;
